@@ -1,0 +1,39 @@
+.bold{
+    font-weight: bold; font-size: 20px;
+}
+
+.name{
+    font-weight: bold;
+}
+
+#drpv{
+    color: rgb(32, 32, 198);
+}
+
+#mayor{
+    color: green;
+}
+
+.action{
+    background-color: rgb(248, 240, 231);
+}
+
+#drrs{
+    color: rgb(165, 29, 29);
+}
+
+#dres{
+    color: orange;
+}
+
+#wz{
+    color: rgb(220, 220, 164);
+}
+
+.p{
+    margin-left: 150px;
+}
+
+#h{
+    margin-left: 60px;
+}
