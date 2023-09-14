@@ -1,0 +1,89 @@
+html{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+}
+
+.weightnormal{
+    font-weight: normal;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.stylenormal{
+    font-style: normal;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.spacingnormal{
+    letter-spacing: normal;
+}
+
+.spacing1{
+    letter-spacing: 0.3em;
+}
+
+.spacing2{
+    letter-spacing: -0.1em;
+}
+
+.decorationsnone{
+    text-decoration: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.linethrough{
+    text-decoration: line-through;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.transformnone{
+    text-transform: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+h3{
+    color: rgb(222, 182, 243);
+    margin-left: 8%;
+    font-size: 18px;
+}
+
+h2{
+    margin-left: 5%;
+    text-transform: capitalize;
+    color: rgb(79, 6, 118);
+    font-size: 28px;
+}
+
+p{
+    margin-left: 12%;
+}
+
+.header{
+    margin-left: 3%;
+}
+
+h1{
+    margin-left: 1.5%;
+}
