@@ -1,0 +1,131 @@
+html{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+header{
+    text-align: center;
+    background-image: url(../img/purple.jpeg);
+}
+
+section{
+    background-color: rgba(0,0,255,0.3);
+}
+
+h1, h2, h3, p{
+    margin:0;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: -3px;
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 31px;
+}
+
+h4{
+    font-size: 20px;
+    text-indent: 12px;
+    margin-top: 23px;
+}
+
+.column_container{
+    width: 960px;
+    margin: auto;
+    padding-top: 35px;
+}
+
+header .column_container{
+    padding-top: 152px;
+    padding-bottom: 188px;
+}
+
+section .column_container{
+    padding-bottom: 45px;
+    
+}
+
+section.content_grid{
+    background-color: rgb(238, 223, 215);
+    padding-bottom: 9px;
+}
+
+
+.intro_text img{
+    width: 400px;
+    height: 300px;
+    float: right;
+    padding-top: 2px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.intro_text p{
+    font-size: 18px;
+    letter-spacing: -0.14px;
+    line-height: 25.25px;
+    padding-bottom: 16px;
+}
+
+.intro_text{
+    background-color: rgb(160, 139, 165);
+}
+
+.section2_img img{
+    height: 150px;
+    width: 200px;
+    float: left;
+}
+
+.section2_img{
+    padding: 0;
+    list-style-type: none
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -21px;
+}
+
+.content_grid p{
+    font-size: 18px;
+    margin-block-start: -20px;
+    margin-inline: 40px;
+    padding-inline-start: 173px;
+    line-height: 25.2px;
+    letter-spacing: -0.2px;
+}
+
+.closing_summary p{
+    text-align: center;
+    font-size: 25px;
+    line-height: 36.2px;
+    letter-spacing: 0.15px;
+}
+
+.closing_summary .column_container{
+    width: 710px
+}
+
+.closing_summary{
+    padding-bottom: 57px;
+    background-color: rgb(200, 173, 207);
+}
+
+footer .column_container{
+    padding-top: 40px;
+    font-size: 18px;
+    letter-spacing: -0.1px;
+}
+
+footer{
+    background-color: rgb(238, 222, 241);
+}
