@@ -1,0 +1,516 @@
+html{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+
+header{
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    z-index: 9999;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.navigation-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.navigation-bar li{
+    display: inline;
+    margin: 50px;
+    
+}
+
+.navigation-bar ul{
+    text-decoration: none; 
+    color: white;
+}
+
+.navigation-bar li a:hover{
+    text-decoration: underline;
+}
+
+.navigation-bar a:link, a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.navigation-bar a:hover, a:active {
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------- home --------------------------------------------------------*/
+#homeimg{
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 160px;
+}
+
+#arrow{
+    width: 5%;
+    float: right;
+    margin-right: 120px;
+}
+
+#arrow:hover{
+    width: 5.5%;
+}
+
+/* ---------------------------------------------------- color terms --------------------------------------------------------*/
+
+.ct{
+    
+}
+
+.ct-intro{
+    padding-top: 220px;
+}
+
+.ct-intro h3{
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+#ct-p{
+    padding-left: 65px;
+}
+
+.color-dimensions h3{
+    padding-top: 50px;
+    padding-left: 45px;
+    font-size: 25px;
+}
+
+.color-dimensions p{
+    padding-left: 85px;
+}
+
+#ctdimensions{
+    margin-left: 90px;
+}
+
+.ct img{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.ct h4{
+    font-weight: 1000;
+    text-decoration: underline;
+    margin-left: 150px;
+    padding-top: 40px;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+
+.soc{
+    margin-right: 40px;
+}
+
+.soc h3{
+    margin-left: 25px;
+}
+
+.soc-intro p{
+    margin-left: 55px;
+}
+
+.socimg{
+    padding-top: 300px;
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.soc-intro{
+    padding-top: 100px;
+}
+
+.onegrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.onegrid p{
+    padding-top: 55px;
+}
+
+#oneoneimg{
+    width: 150%;
+}
+#onetwoimg{
+    width: 150%;
+}
+
+.twogrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 52px;
+}
+
+.twogrid p{
+    padding-top: 50px;
+}
+
+#twoimg{
+    width: 18%;
+}
+
+.stage-threeandfour{
+    
+}
+
+.threegrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 187px
+}
+
+.threegrid p{
+    padding-top: 150px;
+}
+
+.threeimg{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 120px;
+}
+
+#threeoneimg{
+    width: 170%;
+    margin-left: 10px;
+}
+
+#threetwoimg{
+    width: 200%;
+}
+
+#threethreeimg{
+    width: 120%;
+    margin-left: 25px;
+}
+
+.fourgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.fourgrid p{
+    padding-top: 150px;
+}
+
+.fourimg{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+#fouroneimg{
+    width: %;
+}
+
+#fourtwoimg{
+    width: %;
+}
+
+.fivegrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    gap: 200px;
+}
+
+.fivegrid p{
+    padding-top: 150px;
+}
+
+#fiveimg{
+    width: 5%;
+    margin-left: 100px;
+}
+
+.sixgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 180px;
+}
+
+#siximg{
+    width: 8%;
+    height: 8%;
+    margin-left: 60px;
+}
+
+.sevengrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+#sevenimg{
+    width: 25%;
+    height: 25%;
+}
+
+.sevenplusgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+#sevenplusimg{
+    width: 20%;
+}
+
+/* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+
+.lt{
+    margin-right: 50px;
+}
+
+.brightness{
+    padding-top: 220px;
+}
+
+.lt h3{
+    margin-left: 50px;
+    padding-top: 80px;
+}
+
+.brightnessgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.brightness img{
+    width: 50%;
+}
+
+.lightnessgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.lightness img{
+    width: 50%;
+}
+
+.darknessgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.darkness img{
+    width: 50%;
+}
+
+.palenessgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.paleness img{
+    width: 50%;
+}
+
+.deepgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.deep img{
+    width: 50%;
+}
+
+.puregrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.pure img{
+    width: 50%;
+}
+
+.neongrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.neon img{
+    width: 50%;
+}
+
+.fluorescentgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.fluorescent img{
+    width: 50%;
+}
+
+.pastelgrid{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 100px;
+    padding-bottom: 200px;
+}
+
+.pastel img{
+    width: 50%;
+}
+
+/* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+
+.ss-intro{
+    padding-top: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+
+.ss h3{
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.iscc{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 74px;
+}
+
+.ss p{
+    margin-left: 60px;
+}
+
+.ss h4{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.rbgcmyk h3{
+    padding-top: 100px;
+    margin-left: 45px;
+}
+
+.rbgcmyk p{
+    margin-left: 120px;
+}
+
+.rbg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 180px;
+    margin-right: 100px;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.rbg p{
+    padding-top: 40px;
+}
+
+.cmyk{
+    display: flex;
+    flex-direction: row;
+    margin-left: 140px;
+    margin-right: 100px;
+    padding-top: 30px;
+}
+
+.cmyk p{
+    padding-top: 80px;
+}
+
+#rbgimg{
+    width:20%
+}
+
+#cmykimg{
+    width: 65%;
+}
