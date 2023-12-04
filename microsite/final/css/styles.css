@@ -1,0 +1,3983 @@
+html{
+    font-family: 'Inter', "mr-eaves-modern", sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    contain: layout;
+}
+
+@media (min-width: 320px) and (max-width: 450px){
+    header{
+        text-align: center;
+        font-size: 18px;
+        background-color: black;
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    
+    .navigation-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .navigation-bar li{
+        display: inline;
+        margin: 10px; 
+        font-size: 15px;
+    }
+    
+    .navigation-bar ul{
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .navigation-bar li a:hover{
+        text-decoration: underline;
+    }
+    
+    .navigation-bar a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+      
+    #active{
+        color: rgb(174, 174, 174);
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    footer{
+        margin-top: 200px;
+        margin-left: 1.5em;
+        width: 400px;
+        color: rgb(174, 174, 174);
+    }
+    
+    footer ul{
+        list-style-type: none;
+        font-size: 12px;
+        margin-left: -3em;
+        font-size: 5px;
+    }
+    
+    footer h4{
+        font-style: italic;
+        font-size: 8px;
+        line-height: 3px;
+    }
+    
+    /* ---------------------------------------------------- home --------------------------------------------------------*/
+
+    .home{
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        transform: translate(0,1100%);
+    }
+
+    #homeimg{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    #arrow{
+        width: 50%;
+        transform: translate(-400%,0%);
+    }
+    
+    #arrow:hover{
+        width: 52%;
+    }
+    
+    /* ---------------------------------------------------- color terms --------------------------------------------------------*/
+    
+    .ct{
+        width: 300px;
+        margin: auto;
+    }
+    
+    .ct-intro{
+        padding-top: 220px;
+    }
+    
+    .ct-intro h3{
+        font-size: 25px;
+    }
+    
+    #ct-p{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .color-dimensions h3{
+        padding-top: 50px;
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    
+    .color-dimensions p{
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+    
+    #ctdimensions p{
+        margin-left: 150px;
+        margin-right: 100px;
+    }
+    
+    .ct img{
+        width: 65%;
+        margin-left: 3.5em;
+        padding-top: 50px;
+    }
+    
+    .ct h4{
+        font-weight: 1000;
+        text-decoration: underline;
+        margin-left: 20px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    /* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+    
+    .soc{
+        width: 300px;
+        margin: auto;
+    }
+    
+    .soc h3{
+        margin-left: 25px;
+    }
+    
+    .soc-intro p{
+        margin-left: 35px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    .socimg{
+        padding-top: 300px;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    
+    .soc-intro{
+        padding-top: 100px;
+    }
+    
+    .onegrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        margin-right: 15px;
+    }
+    
+    .onegrid p{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    #oneimg{
+        text-align: center;
+    }
+    
+    #oneoneimg{
+        width: 70%;
+    }
+    #onetwoimg{
+        width: 70%;
+    }
+    
+    .twogrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    .twogrid p{
+        padding-top: 20px;
+    }
+    
+    #twoimg{
+        width: 65%;
+        display: block;
+        margin: auto;
+    }
+    
+    .threegrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        margin-left: -18px;
+        margin-right: 15px;
+    }
+    
+    .threegrid p{
+        padding-top: 100px;
+        margin-left: 50px;
+        margin-right: 15px;
+    }
+    
+    .threeimg{
+        margin-left: 120px;
+        display: block;
+        margin: auto;
+    }
+    
+    #threeoneimg{
+        width: 35%;
+        display: block;
+        margin: auto;
+        margin-left: 7em;
+    }
+    
+    #threetwoimg{
+        width: 39%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: 7em;
+    }
+    
+    #threethreeimg{
+        width: 28%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: 8em;
+    }
+    
+    .fourgrid{
+        margin-left: 35px;
+        margin-right: 15px;
+    }
+    
+    .fourgrid p{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .fourimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #fouroneimg{
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+
+    #fourtwoimg{
+        width: 30%;
+        display: block;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+    
+    .fivegrid{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .fivegrid p{
+        padding-top: 70px;
+        margin-left: 35px;
+    }
+    
+    #fiveimg{
+        width: 12%;
+        height: 12%;
+        display: block;
+        margin: auto;
+        margin-left: 8em; 
+    }
+    
+    .sixgrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    
+    #siximg{
+        width: 25%;
+        height: 25%;
+        padding-top: 25px;
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    
+    .sevengrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    #sevenimg{
+        width: 70%;
+        height: 70%;
+        margin-left: -25px;
+        display: block;
+        margin: auto;
+    }
+    
+    .sevenplusgrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        margin-right: 15px;
+    }
+    
+    .stage-seven-plus p{
+        margin-top: 60px;
+    }
+    
+    #sevenplusimg{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    
+    /* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+    
+    .lt{
+        width: 300px;
+        margin: auto;
+    }
+
+    .brightness{
+        padding-top: 220px;
+    }
+    
+    .lt h3{
+        margin-left: 15px;
+        padding-top: 80px;
+    }
+    
+    .brightnessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .brightness img{
+        width: 100%;
+        height: 100%;
+        padding-top: 35px;
+        display: block;
+        margin: auto;
+    }
+    
+    .lightnessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .lightness img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .darknessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .darkness img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .palenessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .paleness img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .deepgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .deep img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .puregrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .pure img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .neongrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .neon img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .fluorescentgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .fluorescent img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .pastelgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .pastel img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    /* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+    
+    .ss{
+        width: 300px;
+        margin: auto;
+    }
+
+    .ss-intro{
+        padding-top: 300px;
+    }
+    
+    .ss h3{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .iscc{
+        padding-top: 20px;
+    }
+    
+    .ss p{
+        margin-left: 45px;
+    }
+    
+    .ss h4{
+        margin-left: 50px;
+        margin-top: 70px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .rbgcmyk h3{
+        padding-top: 100px;
+        margin-left: 18px;
+    }
+    
+    .rbgcmyk p{
+        margin-left: 55px;
+    }
+
+    .rbgcmyk h4{
+        font-family: "mr-eaves-modern";
+        font-weight: 700;
+    }
+    
+    .rbg{
+        margin-right: 50px;
+        padding-top: 50px;
+    }
+    
+    .cmyk{
+        margin-right: 15px;
+    }
+    
+    #rbgimg{
+        width: 60%;
+        height: 60%;
+        display: block;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-left: 5em;
+    }
+    
+    #cmykimg{
+        width: 75%;
+        height: 75%;
+        margin-right: -20px;
+        display: block;
+        margin: auto;
+    }
+    
+}
+
+@media (min-width: 450px) and (max-width: 725px){
+    header{
+        text-align: center;
+        font-size: 25px;
+        background-color: black;
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    
+    .navigation-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .navigation-bar li{
+        display: inline;
+        margin: 5px; 
+    }
+    
+    .navigation-bar ul{
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .navigation-bar li a:hover{
+        text-decoration: underline;
+    }
+    
+    .navigation-bar a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+      
+    #active{
+        color: rgb(174, 174, 174);
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    footer{
+        margin-top: 200px;
+        margin-left: 3em;
+        width: 400px;
+        color: rgb(174, 174, 174);
+    }
+    
+    footer ul{
+        list-style-type: none;
+        font-size: 12px;
+        margin-left: -3em;
+        font-size: 5px;
+    }
+    
+    footer h4{
+        font-style: italic;
+        font-size: 8px;
+        line-height: 3px;
+    }
+    
+    /* ---------------------------------------------------- home --------------------------------------------------------*/
+
+    .home{
+        width: 400px;
+        height: 100%;
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        transform: translate(0,800%);
+    }
+
+    #homeimg{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    #arrow{
+        width: 50%;
+        transform: translate(-400%,0%);
+    }
+    
+    #arrow:hover{
+        width: 52%;
+    }
+    
+    /* ---------------------------------------------------- color terms --------------------------------------------------------*/
+    
+    .ct{
+        width: 400px;
+        margin: auto;
+    }
+    
+    .ct-intro{
+        padding-top: 220px;
+    }
+    
+    .ct-intro h3{
+        font-size: 25px;
+    }
+    
+    #ct-p{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .color-dimensions h3{
+        padding-top: 50px;
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    
+    .color-dimensions p{
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+    
+    #ctdimensions p{
+        margin-left: 150px;
+        margin-right: 100px;
+    }
+    
+    .ct img{
+        width: 65%;
+        margin-left: 3.5em;
+        padding-top: 50px;
+    }
+    
+    .ct h4{
+        font-weight: 1000;
+        text-decoration: underline;
+        margin-left: 20px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    /* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+    
+    .soc{
+        width: 400px;
+        margin: auto;
+    }
+    
+    .soc h3{
+        margin-left: 25px;
+    }
+    
+    .soc-intro p{
+        margin-left: 35px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    .socimg{
+        padding-top: 300px;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    
+    .soc-intro{
+        padding-top: 100px;
+    }
+    
+    .onegrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        margin-right: 15px;
+    }
+    
+    .onegrid p{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    #oneimg{
+        text-align: center;
+    }
+    
+    #oneoneimg{
+        width: 70%;
+    }
+    #onetwoimg{
+        width: 70%;
+    }
+    
+    .twogrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    .twogrid p{
+        padding-top: 20px;
+    }
+    
+    #twoimg{
+        width: 65%;
+        display: block;
+        margin: auto;
+    }
+    
+    .threegrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        margin-left: -18px;
+        margin-right: 15px;
+    }
+    
+    .threegrid p{
+        padding-top: 100px;
+        margin-left: 50px;
+        margin-right: 15px;
+    }
+    
+    .threeimg{
+        margin-left: 120px;
+        display: block;
+        margin: auto;
+    }
+    
+    #threeoneimg{
+        width: 28%;
+        display: block;
+        margin: auto;
+        margin-left: em;
+    }
+    
+    #threetwoimg{
+        width: 28%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: em;
+    }
+    
+    #threethreeimg{
+        width: 21%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: em;
+    }
+    
+    .fourgrid{
+        margin-left: 35px;
+        margin-right: 15px;
+    }
+    
+    .fourgrid p{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .fourimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #fouroneimg{
+        width: 24%;
+        display: block;
+        margin: auto;
+    }
+
+    #fourtwoimg{
+        width: 24%;
+        display: block;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+    
+    .fivegrid{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .fivegrid p{
+        padding-top: 70px;
+        margin-left: 35px;
+    }
+    
+    #fiveimg{
+        width: 12%;
+        height: 12%;
+        display: block;
+        margin: auto;
+        margin-left: 11em; 
+    }
+    
+    .sixgrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    
+    #siximg{
+        width: 25%;
+        height: 25%;
+        padding-top: 25px;
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    
+    .sevengrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 15px;
+    }
+    
+    #sevenimg{
+        width: 70%;
+        height: 70%;
+        margin-left: -25px;
+        display: block;
+        margin: auto;
+    }
+    
+    .sevenplusgrid{
+        margin-left: 35px;
+        padding-top: 30px;
+        margin-right: 15px;
+    }
+    
+    .stage-seven-plus p{
+        margin-top: 60px;
+    }
+    
+    #sevenplusimg{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    
+    /* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+    
+    .lt{
+        width: 400px;
+        margin: auto;
+    }
+
+    .brightness{
+        padding-top: 220px;
+    }
+    
+    .lt h3{
+        margin-left: 15px;
+        padding-top: 80px;
+    }
+    
+    .brightnessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .brightness img{
+        width: 100%;
+        height: 100%;
+        padding-top: 35px;
+        display: block;
+        margin: auto;
+    }
+    
+    .lightnessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .lightness img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .darknessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .darkness img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .palenessgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .paleness img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .deepgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .deep img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .puregrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .pure img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .neongrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .neon img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .fluorescentgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .fluorescent img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .pastelgrid{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+    
+    .pastel img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    /* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+    
+    .ss{
+        width: 400px;
+        margin: auto;
+    }
+
+    .ss-intro{
+        padding-top: 300px;
+    }
+    
+    .ss h3{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .iscc{
+        padding-top: 20px;
+    }
+    
+    .ss p{
+        margin-left: 45px;
+    }
+    
+    .ss h4{
+        margin-left: 50px;
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .rbgcmyk h3{
+        padding-top: 100px;
+        margin-left: 18px;
+    }
+    
+    .rbgcmyk p{
+        margin-left: 55px;
+    }
+
+    .rbgcmyk h4{
+        font-family: "mr-eaves-modern";
+        font-weight: 700;
+    }
+    
+    .rbg{
+        margin-right: 50px;
+        padding-top: 50px;
+    }
+    
+    .cmyk{
+        margin-right: 15px;
+        padding-top: 30px;
+    }
+    
+    .cmyk p{
+        padding-top: 40px;
+    }
+    
+    #rbgimg{
+        width: 60%;
+        height: 60%;
+        display: block;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-left: 6em;
+    }
+    
+    #cmykimg{
+        width: 75%;
+        height: 75%;
+        padding-top: 50px;
+        margin-right: -20px;
+        display: block;
+        margin: auto;
+    }
+    
+}
+
+@media (min-width: 725px) and (max-width: 820px){
+    header{
+        text-align: center;
+        font-size: 25px;
+        background-color: black;
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    
+    .navigation-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .navigation-bar li{
+        display: inline;
+        margin: 38px; 
+    }
+    
+    .navigation-bar ul{
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .navigation-bar li a:hover{
+        text-decoration: underline;
+    }
+    
+    .navigation-bar a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+      
+    #active{
+        color: rgb(174, 174, 174);
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    footer{
+        margin-top: 200px;
+        margin-left: 5em;
+        color: rgb(174, 174, 174);
+    }
+    
+    footer ul{
+        list-style-type: none;
+        font-size: 12px;
+        margin-left: -3em;
+        font-size: 8px;
+    }
+    
+    footer h4{
+        font-style: italic;
+        font-size: 12px;
+        line-height: 3px;
+    }
+    
+    /* ---------------------------------------------------- home --------------------------------------------------------*/
+
+    .home{
+        width: 700px;
+        height: 100%;
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        transform: translate(0,450%);
+    }
+
+    #homeimg{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    #arrow{
+        width: 50%;
+        transform: translate(-400%,0%);
+    }
+    
+    #arrow:hover{
+        width: 52%;
+    }
+    
+    /* ---------------------------------------------------- color terms --------------------------------------------------------*/
+    
+    .ct{
+        width: 700px;
+        margin: auto;
+    }
+    
+    .ct-intro{
+        padding-top: 220px;
+    }
+    
+    .ct-intro h3{
+        font-size: 25px;
+    }
+    
+    #ct-p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .color-dimensions h3{
+        padding-top: 50px;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+    
+    .color-dimensions p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    #ctdimensions p{
+        margin-left: 250px;
+        margin-right: 100px;
+    }
+    
+    .ct img{
+        width: 65%;
+        margin-left: 8em;
+        padding-top: 50px;
+    }
+    
+    .ct h4{
+        font-weight: 1000;
+        text-decoration: underline;
+        margin-left: 75px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    /* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+    
+    .soc{
+        width: 700px;
+        margin: auto;
+    }
+    
+    .soc h3{
+        margin-left: 25px;
+    }
+    
+    .soc-intro p{
+        margin-left: 100px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    .socimg{
+        padding-top: 300px;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    
+    .soc-intro{
+        padding-top: 100px;
+    }
+    
+    .onegrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        margin-right: 50px;
+    }
+    
+    .onegrid p{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    #oneimg{
+        text-align: center;
+    }
+    
+    #oneoneimg{
+        width: 50%;
+    }
+    #onetwoimg{
+        width: 50%;
+    }
+    
+    .twogrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    .twogrid p{
+        padding-top: 20px;
+    }
+    
+    #twoimg{
+        width: 35%;
+        display: block;
+        margin: auto;
+    }
+    
+    .threegrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        margin-left: -18px;
+        margin-right: 50px;
+    }
+    
+    .threegrid p{
+        padding-top: 100px;
+        margin-left: 100px;
+        margin-right: 30px;
+    }
+    
+    .threeimg{
+        margin-left: 120px;
+        display: block;
+        margin: auto;
+    }
+    
+    #threeoneimg{
+        width: 22%;
+        display: block;
+        margin: auto;
+        margin-left: 18em;
+    }
+    
+    #threetwoimg{
+        width: 22%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: 18em;
+    }
+    
+    #threethreeimg{
+        width: 15%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: 19.5em;
+    }
+    
+    .fourgrid{
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+    
+    .fourgrid p{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .fourimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #fouroneimg{
+        width: 16%;
+        display: block;
+        margin: auto;
+    }
+
+    #fourtwoimg{
+        width: 16%;
+        display: block;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+    
+    .fivegrid{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .fivegrid p{
+        padding-top: 70px;
+        margin-left: 80px;
+    }
+    
+    #fiveimg{
+        width: 6%;
+        height: 6%;
+        display: block;
+        margin: auto;
+        margin-left: 21.5em;
+    }
+    
+    .sixgrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    
+    #siximg{
+        width: 18%;
+        height: 18%;
+        padding-top: 25px;
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    
+    .sevengrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    #sevenimg{
+        width: 50%;
+        height: 50%;
+        margin-left: -25px;
+        display: block;
+        margin: auto;
+    }
+    
+    .sevenplusgrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        margin-right: 50px;
+    }
+    
+    .stage-seven-plus p{
+        margin-top: 60px;
+    }
+    
+    #sevenplusimg{
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+    
+    /* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+    
+    .lt{
+        width: 700px;
+        margin: auto;
+    }
+
+    .brightness{
+        padding-top: 220px;
+    }
+    
+    .lt h3{
+        margin-left: 50px;
+        padding-top: 80px;
+    }
+    
+    .brightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 0px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .brightness img{
+        width: 40%;
+        height: 40%;
+        padding-top: 35px;
+    }
+    
+    .lightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+        margin-right: 30px;
+    }
+    
+    .lightness img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .darknessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .darkness img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .palenessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .paleness img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .deepgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .deep img{
+        width: 40%;
+        height: 40%;
+        padding-top: 20px;
+    }
+    
+    .puregrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .pure img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .neongrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .neon img{
+        width: 40%;
+        height: 40%;
+        padding-top: 25px;
+    }
+    
+    .fluorescentgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .fluorescent img{
+        width: 40%;
+        height: 70%;
+        padding-top: 70px;
+    }
+    
+    .pastelgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .pastel img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    /* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+    
+    .ss{
+        width: 700px;
+        margin: auto;
+    }
+
+    .ss-intro{
+        padding-top: 220px;
+        margin-left: 1em;
+    }
+    
+    .ss h3{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    
+    .iscc{
+        padding-top: 20px;
+        margin-left: 1em;
+    }
+    
+    .ss p{
+        margin-left: 60px;
+    }
+    
+    .ss h4{
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .rbgcmyk h3{
+        padding-top: 100px;
+        margin-left: 45px;
+    }
+    
+    .rbgcmyk p{
+        margin-left: 120px;
+    }
+
+    .rbgcmyk h4{
+        font-family: "mr-eaves-modern";
+        font-weight: 700;
+    }
+    
+    .rbg{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        margin-right: 50px;
+        padding-top: 50px;
+    }
+    
+    .cmyk{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        margin-right: 50px;
+        padding-top: 30px;
+    }
+    
+    .cmyk p{
+        padding-top: 40px;
+    }
+    
+    #rbgimg{
+        width: 28%;
+        height: 28%;
+    }
+    
+    #cmykimg{
+        width: 75%;
+        height: 75%;
+        padding-top: 50px;
+        margin-right: -20px;
+    }
+    
+}
+
+@media (min-width: 820px) and (max-width: 1024px){
+    header{
+        text-align: center;
+        font-size: 25px;
+        background-color: black;
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    
+    .navigation-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .navigation-bar li{
+        display: inline;
+        margin: 25px; 
+    }
+    
+    .navigation-bar ul{
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .navigation-bar li a:hover{
+        text-decoration: underline;
+    }
+    
+    .navigation-bar a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+      
+    #active{
+        color: rgb(174, 174, 174);
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    footer{
+        margin-top: 200px;
+        margin-left: 10em;
+        color: rgb(174, 174, 174);
+    }
+    
+    footer ul{
+        list-style-type: none;
+        font-size: 12px;
+        margin-left: -3em;
+        font-size: 8px;
+    }
+    
+    footer h4{
+        font-style: italic;
+        font-size: 12px;
+        line-height: 3px;
+    }
+    
+    /* ---------------------------------------------------- home --------------------------------------------------------*/
+
+    .home{
+        width: 800px;
+        height: 100%;
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        transform: translate(0,375%);
+    }
+
+    #homeimg{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    #arrow{
+        width: 50%;
+        transform: translate(-400%,0%);
+    }
+    
+    #arrow:hover{
+        width: 52%;
+    }
+    
+    /* ---------------------------------------------------- color terms --------------------------------------------------------*/
+    
+    .ct{
+        width: 800px;
+        margin: auto;
+        padding-left: 50px;
+    }
+    
+    .ct-intro{
+        padding-top: 220px;
+    }
+    
+    .ct-intro h3{
+        font-size: 25px;
+    }
+    
+    #ct-p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .color-dimensions h3{
+        padding-top: 50px;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+    
+    .color-dimensions p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    #ctdimensions p{
+        margin-left: 250px;
+        margin-right: 100px;
+    }
+    
+    .ct img{
+        width: 65%;
+        margin-left: 8em;
+        padding-top: 50px;
+    }
+    
+    .ct h4{
+        font-weight: 1000;
+        text-decoration: underline;
+        margin-left: 75px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    /* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+    
+    .soc{
+        width: 800px;
+        margin: auto;
+    }
+    
+    .soc h3{
+        margin-left: 25px;
+    }
+    
+    .soc-intro p{
+        margin-left: 100px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    .socimg{
+        padding-top: 300px;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    
+    .soc-intro{
+        padding-top: 100px;
+    }
+    
+    .onegrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        margin-right: 50px;
+    }
+    
+    .onegrid p{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    #oneimg{
+        text-align: center;
+    }
+    
+    #oneoneimg{
+        width: 50%;
+    }
+    #onetwoimg{
+        width: 50%;
+    }
+    
+    .twogrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    .twogrid p{
+        padding-top: 20px;
+    }
+    
+    #twoimg{
+        width: 25%;
+        display: block;
+        margin: auto;
+    }
+    
+    .threegrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        margin-left: -18px;
+        margin-right: 50px;
+    }
+    
+    .threegrid p{
+        padding-top: 100px;
+        margin-left: 100px;
+        margin-right: 30px;
+    }
+    
+    .threeimg{
+        margin-left: 120px;
+        display: block;
+        margin: auto;
+    }
+    
+    #threeoneimg{
+        width: 20%;
+        display: block;
+        margin: auto;
+        margin-left: 22em;
+    }
+    
+    #threetwoimg{
+        width: 20%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: 22em;
+    }
+    
+    #threethreeimg{
+        width: 12%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: 24em;
+    }
+    
+    .fourgrid{
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+    
+    .fourgrid p{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .fourimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #fouroneimg{
+        width: 16%;
+        display: block;
+        margin: auto;
+    }
+
+    #fourtwoimg{
+        width: 16%;
+        display: block;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+    
+    .fivegrid{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .fivegrid p{
+        padding-top: 70px;
+        margin-left: 80px;
+    }
+    
+    #fiveimg{
+        width: 6%;
+        height: 6%;
+        display: block;
+        margin: auto;
+        margin-left: 25em;
+    }
+    
+    .sixgrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    
+    #siximg{
+        width: 15%;
+        height: 15%;
+        padding-top: 25px;
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    
+    .sevengrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    #sevenimg{
+        width: 40%;
+        height: 40%;
+        margin-left: -25px;
+        display: block;
+        margin: auto;
+    }
+    
+    .sevenplusgrid{
+        margin-left: 80px;
+        padding-top: 30px;
+        margin-right: 50px;
+    }
+    
+    .stage-seven-plus p{
+        margin-top: 60px;
+    }
+    
+    #sevenplusimg{
+        width: 25%;
+        display: block;
+        margin: auto;
+    }
+    
+    /* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+    
+    .lt{
+        width: 800px;
+        margin: auto;
+    }
+
+    .brightness{
+        padding-top: 220px;
+    }
+    
+    .lt h3{
+        margin-left: 50px;
+        padding-top: 80px;
+    }
+    
+    .brightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .brightness img{
+        width: 40%;
+        height: 40%
+    }
+    
+    .lightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+        margin-right: 30px;
+    }
+    
+    .lightness img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .darknessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .darkness img{
+        width: 40%;
+    }
+    
+    .palenessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .paleness img{
+        width: 40%;
+    }
+    
+    .deepgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .deep img{
+        width: 40%;
+    }
+    
+    .puregrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .pure img{
+        width: 40%;
+    }
+    
+    .neongrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .neon img{
+        width: 40%;
+    }
+    
+    .fluorescentgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .fluorescent img{
+        width: 40%;
+        height: 70%;
+    }
+    
+    .pastelgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .pastel img{
+        width: 40%;
+    }
+    
+    /* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+    
+    .ss{
+        width: 800px;
+        margin: auto;
+    }
+
+    .ss-intro{
+        padding-top: 220px;
+        margin-left: 1em;
+        margin-right: 3em;
+    }
+    
+    .ss h3{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    
+    .iscc{
+        padding-top: 20px;
+        margin-left: 1em;
+        margin-right: 3em;
+    }
+    
+    .ss p{
+        margin-left: 60px;
+    }
+    
+    .ss h4{
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .rbgcmyk h3{
+        padding-top: 100px;
+        margin-left: 45px;
+    }
+    
+    .rbgcmyk p{
+        margin-left: 120px;
+    }
+
+    .rbgcmyk h4{
+        font-family: "mr-eaves-modern";
+        font-weight: 700;
+    }
+    
+    .rbg{
+        display: flex;
+        flex-direction: row;
+        margin-left: 180px;
+        margin-right: 100px;
+        padding-top: 50px;
+        gap: 20px;
+    }
+
+    .rbg p{
+        margin-top: -40px;
+    }
+    
+    .cmyk{
+        display: flex;
+        flex-direction: row;
+        margin-left: 140px;
+        margin-right: 100px;
+        padding-top: 30px;
+    }
+    
+    .cmyk p{
+        margin-top: 20px;
+
+    }
+    
+    #rbgimg{
+        width: 25%;
+        height: 25%;
+    }
+    
+    #cmykimg{
+        width: 70%;
+        height: 70%;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1250px){
+    header{
+        text-align: center;
+        font-size: 25px;
+        background-color: black;
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    
+    .navigation-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .navigation-bar li{
+        display: inline;
+        margin: 20px; 
+    }
+    
+    .navigation-bar ul{
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .navigation-bar li a:hover{
+        text-decoration: underline;
+    }
+    
+    .navigation-bar a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+      
+    #active{
+        color: rgb(174, 174, 174);
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    footer{
+        margin-top: 200px;
+        margin-left: 10em;
+        color: rgb(174, 174, 174);
+    }
+    
+    footer ul{
+        list-style-type: none;
+        font-size: 12px;
+        margin-left: -3em;
+        font-size: 8px;
+    }
+    
+    footer h4{
+        font-style: italic;
+        font-size: 12px;
+        line-height: 3px;
+    }
+    
+    /* ---------------------------------------------------- home --------------------------------------------------------*/
+
+    .home{
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        transform: translate(0,300%);
+    }
+
+    #homeimg{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    #arrow{
+        width: 50%;
+        transform: translate(-400%,0%);
+    }
+    
+    #arrow:hover{
+        width: 52%;
+    }
+    
+    /* ---------------------------------------------------- color terms --------------------------------------------------------*/
+    
+    .ct{
+        width: 1000px;
+        margin: auto;
+        padding-left: 50px;
+    }
+    
+    .ct-intro{
+        padding-top: 220px;
+    }
+    
+    .ct-intro h3{
+        font-size: 25px;
+    }
+    
+    #ct-p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .color-dimensions h3{
+        padding-top: 50px;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+    
+    .color-dimensions p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    #ctdimensions p{
+        margin-left: 250px;
+        margin-right: 100px;
+    }
+    
+    .ct img{
+        width: 65%;
+        margin-left: 10em;
+        padding-top: 50px;
+    }
+    
+    .ct h4{
+        font-weight: 1000;
+        text-decoration: underline;
+        margin-left: 75px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    /* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+    
+    .soc{
+        width: 1000px;
+        margin: auto;
+    }
+    
+    .soc h3{
+        margin-left: 25px;
+    }
+    
+    .soc-intro p{
+        margin-left: 100px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    .socimg{
+        padding-top: 300px;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    
+    .soc-intro{
+        padding-top: 100px;
+    }
+    
+    .onegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 150px;
+        margin-right: 50px;
+    }
+    
+    .onegrid p{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    
+    #oneoneimg{
+        width: 150%;
+    }
+    #onetwoimg{
+        width: 150%;
+    }
+    
+    .twogrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 70px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    .twogrid p{
+        padding-top: 10px;
+    }
+    
+    #twoimg{
+        width: 18%;
+    }
+    
+    .threegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 187px;
+        margin-left: -18px;
+        margin-right: 50px;
+    }
+    
+    .threegrid p{
+        padding-top: 100px;
+    }
+    
+    .threeimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 120px;
+    }
+    
+    #threeoneimg{
+        width: 170%;
+        margin-left: 10px;
+    }
+    
+    #threetwoimg{
+        width: 200%;
+    }
+    
+    #threethreeimg{
+        width: 120%;
+        margin-left: 25px;
+    }
+    
+    .fourgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 50px;
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+    
+    .fourgrid p{
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+    
+    .fourimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 100px;
+    }
+    
+    .fivegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        gap: 200px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    .fivegrid p{
+        padding-top: 70px;
+    }
+    
+    #fiveimg{
+        width: 4%;
+        height: 4%;
+        margin-left: 50px;
+    }
+    
+    .sixgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 185px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+    
+    
+    #siximg{
+        width: 6%;
+        height: 6%;
+        margin-left: 40px;
+        padding-top: 25px;
+    }
+    
+    .sevengrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 130px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+    }
+
+    .sevengrid p{
+        margin-top: -20px;
+    }
+    
+    #sevenimg{
+        width: 20%;
+        height: 20%;
+        margin-left: -25px;
+    }
+    
+    .sevenplusgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 120px;
+        margin-right: 50px;
+    }
+    
+    .stage-seven-plus p{
+        margin-top: 60px;
+    }
+    
+    #sevenplusimg{
+        width: 18%;
+    }
+    
+    /* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+    
+    .lt{
+        width: 1000px;
+        margin: auto;
+    }
+
+    .brightness{
+        padding-top: 220px;
+    }
+    
+    .lt h3{
+        margin-left: 50px;
+        padding-top: 80px;
+    }
+    
+    .brightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .brightness img{
+        width: 40%;
+        height: 40%
+    }
+    
+    .lightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+        margin-right: 30px;
+    }
+    
+    .lightness img{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .darknessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .darkness img{
+        width: 40%;
+    }
+    
+    .palenessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .paleness img{
+        width: 40%;
+    }
+    
+    .deepgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .deep img{
+        width: 40%;
+    }
+    
+    .puregrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .pure img{
+        width: 40%;
+    }
+    
+    .neongrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .neon img{
+        width: 40%;
+    }
+    
+    .fluorescentgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .fluorescent img{
+        width: 40%;
+        height: 70%;
+    }
+    
+    .pastelgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+        margin-right: 30px;
+    }
+    
+    .pastel img{
+        width: 40%;
+    }
+    
+    /* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+    
+    .ss{
+        width: 1000px;
+        margin: auto;
+    }
+
+    .ss-intro{
+        padding-top: 220px;
+        margin-left: 1em;
+    }
+    
+    .ss h3{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    
+    .iscc{
+        padding-top: 20px;
+        margin-left: 1em;
+    }
+    
+    .ss p{
+        margin-left: 60px;
+    }
+    
+    .ss h4{
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .rbgcmyk h3{
+        padding-top: 100px;
+        margin-left: 45px;
+    }
+    
+    .rbgcmyk p{
+        margin-left: 120px;
+    }
+
+    .rbgcmyk h4{
+        font-family: "mr-eaves-modern";
+        font-weight: 700;
+    }
+    
+    .rbg{
+        display: flex;
+        flex-direction: row;
+        margin-left: 180px;
+        margin-right: 100px;
+        padding-top: 50px;
+        gap: 20px;
+    }
+    
+    .cmyk{
+        display: flex;
+        flex-direction: row;
+        margin-left: 140px;
+        margin-right: 100px;
+        padding-top: 30px;
+    }
+    
+    .cmyk p{
+        padding-top: 40px;
+    }
+    
+    #rbgimg{
+        width: 18%;
+        height: 18%;
+    }
+    
+    #cmykimg{
+        width: 70%;
+        height: 70%;
+    }
+    
+}
+
+@media (min-width: 1250px) and (max-width: 1575px){
+    header{
+        text-align: center;
+        font-size: 25px;
+        background-color: black;
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    
+    .navigation-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .navigation-bar li{
+        display: inline;
+        margin: 50px; 
+    }
+    
+    .navigation-bar ul{
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .navigation-bar li a:hover{
+        text-decoration: underline;
+    }
+    
+    .navigation-bar a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+      
+    #active{
+        color: rgb(174, 174, 174);
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    footer{
+        margin-top: 200px;
+        margin-left: 10em;
+        color: rgb(174, 174, 174);
+    }
+    
+    footer ul{
+        list-style-type: none;
+        font-size: 12px;
+        margin-left: -3em;
+        font-size: 8px;
+    }
+    
+    footer h4{
+        font-style: italic;
+        font-size: 12px;
+        line-height: 3px;
+    }
+    
+    /* ---------------------------------------------------- home --------------------------------------------------------*/
+
+    .home{
+        width: 1175px;
+        height: 100%;
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        transform: translate(0,250%);
+    }
+
+    #homeimg{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    #arrow{
+        width: 50%;
+        transform: translate(-400%,0%);
+    }
+    
+    #arrow:hover{
+        width: 52%;
+    }
+    
+    /* ---------------------------------------------------- color terms --------------------------------------------------------*/
+    
+    .ct{
+        width: 1175px;
+        margin: auto;
+        padding-left: 100px;
+    }
+    
+    .ct-intro{
+        padding-top: 220px;
+    }
+    
+    .ct-intro h3{
+        font-size: 25px;
+    }
+    
+    #ct-p{
+        margin-left: 100px;
+        margin-right: 250px;
+    }
+    
+    .color-dimensions h3{
+        padding-top: 50px;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+    
+    .color-dimensions p{
+        margin-left: 100px;
+        margin-right: 250px;
+    }
+    
+    #ctdimensions p{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    
+    .ct img{
+        width: 65%;
+        margin-left: 10em;
+        padding-top: 50px;
+    }
+    
+    .ct h4{
+        font-weight: 1000;
+        text-decoration: underline;
+        margin-left: 75px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    /* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+    
+    .soc{
+        width: 1175px;
+        margin: auto;
+    }
+    
+    .soc h3{
+        margin-left: 25px;
+    }
+    
+    .soc-intro p{
+        margin-left: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .socimg{
+        padding-top: 300px;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    
+    .soc-intro{
+        padding-top: 100px;
+    }
+    
+    .onegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 150px;
+    }
+    
+    .onegrid p{
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    
+    #oneoneimg{
+        width: 150%;
+    }
+    #onetwoimg{
+        width: 150%;
+    }
+    
+    .twogrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 70px;
+        padding-bottom: 50px;
+    }
+    
+    .twogrid p{
+        padding-top: 45px;
+    }
+    
+    #twoimg{
+        width: 18%;
+    }
+    
+    .threegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 187px;
+        margin-left: -18px;
+    }
+    
+    .threegrid p{
+        padding-top: 200px;
+    }
+    
+    .threeimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 120px;
+    }
+    
+    #threeoneimg{
+        width: 170%;
+        margin-left: 10px;
+    }
+    
+    #threetwoimg{
+        width: 200%;
+    }
+    
+    #threethreeimg{
+        width: 120%;
+        margin-left: 25px;
+    }
+    
+    .fourgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+    }
+    
+    .fourgrid p{
+        padding-top: 150px;
+    }
+    
+    .fourimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 100px;
+    }
+    
+    .fivegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        gap: 200px;
+        padding-bottom: 50px;
+    }
+    
+    .fivegrid p{
+        padding-top: 125px;
+    }
+    
+    #fiveimg{
+        width: 4%;
+        height: 4%;
+        margin-left: 50px;
+    }
+    
+    .sixgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 185px;
+        padding-bottom: 50px;
+    }
+    
+    
+    #siximg{
+        width: 6%;
+        height: 6%;
+        margin-left: 40px;
+        padding-top: 25px;
+    }
+    
+    .sevengrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 75px;
+        padding-bottom: 50px;
+    }
+    
+    #sevenimg{
+        width: 20%;
+        height: 20%;
+        margin-left: -25px;
+    }
+    
+    .sevenplusgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 75px;
+    }
+    
+    .stage-seven-plus p{
+        margin-top: 60px;
+    }
+    
+    #sevenplusimg{
+        width: 18%;
+    }
+    
+    /* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+    
+    .lt{
+        width: 1175px;
+        margin: auto;
+    }
+
+    .brightness{
+        padding-top: 220px;
+    }
+    
+    .lt h3{
+        margin-left: 50px;
+        padding-top: 80px;
+    }
+    
+    .brightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .brightness img{
+        width: 50%;
+        height: 50%
+    }
+    
+    .lightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .lightness img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    .darknessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .darkness img{
+        width: 50%;
+    }
+    
+    .palenessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .paleness img{
+        width: 50%;
+    }
+    
+    .deepgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .deep img{
+        width: 50%;
+    }
+    
+    .puregrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .pure img{
+        width: 50%;
+    }
+    
+    .neongrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .neon img{
+        width: 50%;
+    }
+    
+    .fluorescentgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .fluorescent img{
+        width: 50%;
+        height: 80%;
+    }
+    
+    .pastelgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 120px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    .pastel img{
+        width: 50%;
+    }
+    
+    /* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+    
+    .ss{
+        width: 1175px;
+        margin: auto;
+    }
+
+    .ss-intro{
+        padding-top: 220px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 8em;
+        margin-left: 3em;
+    }
+    
+    .ss h3{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    
+    .iscc{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 3em;
+    }
+    
+    .ss p{
+        margin-left: 60px;
+    }
+    
+    .ss h4{
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .rbgcmyk h3{
+        padding-top: 100px;
+        margin-left: 45px;
+    }
+    
+    .rbgcmyk p{
+        margin-left: 120px;
+    }
+
+    .rbgcmyk h4{
+        font-family: "mr-eaves-modern";
+        font-weight: 700;
+    }
+    
+    .rbg{
+        display: flex;
+        flex-direction: row;
+        margin-left: 180px;
+        margin-right: 100px;
+        padding-top: 50px;
+        gap: 20px;
+    }
+    
+    .rbg p{
+        padding-top: 40px;
+    }
+    
+    .cmyk{
+        display: flex;
+        flex-direction: row;
+        margin-left: 140px;
+        margin-right: 100px;
+        padding-top: 30px;
+    }
+    
+    .cmyk p{
+        padding-top: 80px;
+    }
+    
+    #rbgimg{
+        width:18%
+    }
+    
+    #cmykimg{
+        width: 70%;
+        height: 70%;
+    }
+    
+}
+
+@media (min-width: 1575px){
+    header{
+        text-align: center;
+        font-size: 25px;
+        background-color: black;
+        z-index: 9999;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    
+    .navigation-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .navigation-bar li{
+        display: inline;
+        margin: 50px; 
+    }
+    
+    .navigation-bar ul{
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .navigation-bar li a:hover{
+        text-decoration: underline;
+    }
+    
+    .navigation-bar a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    #active{
+        color: rgb(174, 174, 174);
+    }
+
+    img{
+        width: 100%;
+    }
+    
+    footer{
+        margin-top: 200px;
+        margin-left: 10em;
+        color: rgb(174, 174, 174);
+    }
+    
+    footer ul{
+        list-style-type: none;
+        font-size: 12px;
+        margin-left: -3em;
+        font-size: 8px;
+    }
+    
+    footer h4{
+        font-style: italic;
+        font-size: 12px;
+        line-height: 3px;
+    }
+    
+    /* ---------------------------------------------------- home --------------------------------------------------------*/
+
+    .home{
+        width: 1500px;
+        height: 100%;
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        transform: translate(0,185%);
+    }
+
+    #homeimg{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    #arrow{
+        width: 50%;
+        transform: translate(-400%,0%);
+    }
+    
+    #arrow:hover{
+        width: 52%;
+    }
+    
+    /* ---------------------------------------------------- color terms --------------------------------------------------------*/
+    
+    .ct{
+        width: 1500px;
+        margin: auto;
+        padding-left: 100px;
+    }
+    
+    .ct-intro{
+        padding-top: 220px;
+    }
+    
+    .ct-intro h3{
+        font-size: 25px;
+    }
+    
+    #ct-p{
+        margin-left: 100px;
+        margin-right: 250px;
+    }
+    
+    .color-dimensions h3{
+        padding-top: 50px;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+    
+    .color-dimensions p{
+        margin-left: 100px;
+        margin-right: 250px;
+    }
+    
+    #ctdimensions p{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    
+    .ct img{
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    
+    .ct h4{
+        font-weight: 1000;
+        text-decoration: underline;
+        margin-left: 75px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    /* ---------------------------------------------------- stages of color --------------------------------------------------------*/
+    
+    .soc{
+        width: 1500px;
+        margin: auto;
+    }
+    
+    .soc h3{
+        margin-left: 25px;
+    }
+    
+    .soc-intro p{
+        margin-left: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .socimg{
+        padding-top: 300px;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    
+    .soc-intro{
+        padding-top: 100px;
+    }
+    
+    .onegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 150px;
+    }
+    
+    .onegrid p{
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    
+    #oneoneimg{
+        width: 150%;
+    }
+    #onetwoimg{
+        width: 150%;
+    }
+    
+    .twogrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 70px;
+        padding-bottom: 50px;
+    }
+    
+    .twogrid p{
+        padding-top: 80px;
+    }
+    
+    #twoimg{
+        width: 18%;
+    }
+    
+    .threegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 187px;
+        margin-left: -18px;
+    }
+    
+    .threegrid p{
+        padding-top: 300px;
+    }
+    
+    .threeimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 120px;
+    }
+    
+    #threeoneimg{
+        width: 170%;
+        margin-left: 10px;
+    }
+    
+    #threetwoimg{
+        width: 200%;
+    }
+    
+    #threethreeimg{
+        width: 120%;
+        margin-left: 25px;
+    }
+    
+    .fourgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+    }
+    
+    .fourgrid p{
+        padding-top: 200px;
+    }
+    
+    .fourimg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 100px;
+    }
+    
+    .fivegrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        gap: 200px;
+        padding-bottom: 50px;
+    }
+    
+    .fivegrid p{
+        padding-top: 125px;
+    }
+    
+    #fiveimg{
+        width: 4%;
+        height: 4%;
+        margin-left: 50px;
+    }
+    
+    .sixgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 185px;
+        padding-bottom: 50px;
+    }
+    
+    
+    #siximg{
+        width: 6%;
+        height: 6%;
+        margin-left: 40px;
+        padding-top: 25px;
+    }
+    
+    .sevengrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 75px;
+        padding-bottom: 50px;
+    }
+    
+    #sevenimg{
+        width: 20%;
+        height: 20%;
+        margin-left: -25px;
+    }
+    
+    .sevenplusgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 75px;
+    }
+    
+    .stage-seven-plus p{
+        margin-top: 75px;
+    }
+    
+    #sevenplusimg{
+        width: 18%;
+    }
+    
+    /* ------------------------------------------------ linguistic terminology ------------------------------------------------------*/
+    
+    .lt{
+        width: 1500px;
+        margin: auto;
+    }
+
+    .brightness{
+        padding-top: 220px;
+    }
+    
+    .lt h3{
+        margin-left: 20px;
+        padding-top: 80px;
+    }
+    
+    .brightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .brightness img{
+        width: 50%;
+    }
+    
+    .lightnessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .lightness img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    .darknessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .darkness img{
+        width: 50%;
+    }
+    
+    .palenessgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .paleness img{
+        width: 50%;
+    }
+    
+    .deepgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .deep img{
+        width: 50%;
+    }
+    
+    .puregrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .pure img{
+        width: 50%;
+    }
+    
+    .neongrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .neon img{
+        width: 50%;
+    }
+    
+    .fluorescentgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .fluorescent img{
+        width: 50%;
+        height: 80%;
+    }
+    
+    .pastelgrid{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        padding-top: 30px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .pastel img{
+        width: 50%;
+    }
+    
+    /* ------------------------------------------------ standardized systems ------------------------------------------------------*/
+    
+    .ss{
+        width: 1500px;
+        margin: auto;
+    }
+
+    .ss-intro{
+        padding-top: 220px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 8em;
+        margin-left: 15em;
+    }
+    
+    .ss h3{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    
+    .iscc{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 15em;
+    }
+    
+    .ss p{
+        margin-left: 60px;
+    }
+    
+    .ss h4{
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .rbgcmyk h3{
+        padding-top: 100px;
+        margin-left: 45px;
+    }
+    
+    .rbgcmyk p{
+        margin-left: 120px;
+    }
+
+    .rbgcmyk h4{
+        font-family: "mr-eaves-modern";
+        font-weight: 700;
+    }
+    
+    .rbg{
+        display: flex;
+        flex-direction: row;
+        margin-left: 180px;
+        margin-right: 100px;
+        padding-top: 50px;
+        gap: 20px;
+    }
+    
+    .rbg p{
+        padding-top: 40px;
+    }
+    
+    .cmyk{
+        display: flex;
+        flex-direction: row;
+        margin-left: 140px;
+        margin-right: 100px;
+        padding-top: 30px;
+    }
+    
+    .cmyk p{
+        padding-top: 80px;
+    }
+    
+    #rbgimg{
+        width:19%
+    }
+    
+    #cmykimg{
+        width: 50%;
+        height: 50%;
+    }
+    
+}
+
